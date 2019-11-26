@@ -993,7 +993,7 @@ extern void         btm_acl_encrypt_change (UINT16 handle, UINT8 status, UINT8 e
 BTM_API extern UINT16       btm_get_acl_disc_reason_code (void);
 BTM_API extern tBTM_STATUS  btm_remove_acl (BD_ADDR bd_addr);
 extern void         btm_read_remote_features_complete (UINT8 *p);
-extern void         btm_read_remote_ext_features_complete (UINT8 *p);
+extern void         btm_read_remote_ext_features_complete (UINT8 *p, UINT8 evt_len);
 extern void         btm_read_remote_ext_features_failed (UINT8 status, UINT16 handle);
 extern void         btm_read_remote_version_complete (UINT8 *p);
 // btla-specific ++

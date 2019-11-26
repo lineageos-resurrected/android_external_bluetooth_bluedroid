@@ -881,7 +881,7 @@ static void btu_hcif_read_rmt_ext_features_comp_evt (UINT8 *p, UINT16 evt_len)
     STREAM_TO_UINT8 (status, p_cur);
 
     if (status == HCI_SUCCESS)
-        btm_read_remote_ext_features_complete(p);
+        btm_read_remote_ext_features_complete(p, evt_len);
     else
     {
         STREAM_TO_UINT16 (handle, p_cur);
